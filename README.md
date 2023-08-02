@@ -1,5 +1,5 @@
 # IMGW data Downloader Shiny App
-The goal of the Application is to automatize downloading of in-situ meteorological and hydrological data from publicl repository of Polish Institute of Meterology and Water Management - National Research Institute IMGW-PIB https://dane.imgw.pl/
+The goal of the Application is to automatize downloading of in-situ meteorological and hydrological data from public repository of Polish Institute of Meterology and Water Management - National Research Institute IMGW-PIB https://dane.imgw.pl/
 
 Application base on Climate R package of Bartosz Czernecki and you need it for the app to work properly. Instructions available at the link https://github.com/bczernecki/climate
 
