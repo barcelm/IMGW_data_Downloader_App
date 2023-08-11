@@ -1,12 +1,34 @@
+# download and install required packages
+my_packages = c("dplyr", "remotes", "lubridate", "openxlsx", "shiny","shinythemes","shinyjs")
+
+install_if_missing = function(p) {
+  if (p %in% rownames(installed.packages()) == FALSE) {
+    install.packages(p)
+  }
+}
+invisible(sapply(my_packages, install_if_missing))
+
 library(shiny)
 library(dplyr)
 library(remotes)
-#install_github("bczernecki/climate")
-library(climate)
 library(lubridate)
 library(openxlsx)
 library(shinyjs)
 library(shinythemes)
+
+
+pack_climat = "climate"
+
+install_if_missing2 = function(n) {
+  if (n %in% rownames(installed.packages()) == FALSE) {
+    install_github("bczernecki/climate")
+  }
+}
+
+invisible(sapply(pack_climat, install_if_missing2))
+
+library(climate)
+
 
 # Define UI for data download app ----
 ui <- fluidPage(theme = shinytheme("cerulean"),
@@ -58,7 +80,9 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                   )
                 ) #sidebar layout
               ), #tabpanel
-                
+               # tabPanel("Data Visualization",
+                #         mainPanel()
+                 #        ),
                 tabPanel("About", 
                          
                          mainPanel(
@@ -104,6 +128,7 @@ server <- function(input, output) {
   # render signature ----
     output$author <- renderText("Bartłomiej Sobczyk, Poznań 2023")
   # create hydro_imgw with arguments----
+    
   calosc <- eventReactive(input$downloadData, {
     if (input$rodzaj == "Hydrological") {
       # choose an interval----
@@ -154,6 +179,7 @@ server <- function(input, output) {
   })
   
   # render table----
+  
   output$calosc_table <- renderDataTable({
     calosc()
   })
@@ -178,6 +204,10 @@ server <- function(input, output) {
     )
   }
   )
+  
+  ### Data Visualization ----
+  
+  
 }
 
 # Create Shiny app----
