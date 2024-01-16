@@ -5,6 +5,13 @@ The application base on Climate R package of [Bartosz Czernecki](https://github.
 
 All you need is to simply launch the application. 
 
+## Screens 
+### First view
+![image](https://github.com/barcelm/IMGW_data_Downloader_App/assets/138857410/0f863762-0c26-47be-b556-170ac284ff71)
+
+### Downloaded data
+![image](https://github.com/barcelm/IMGW_data_Downloader_App/assets/138857410/6b14fab7-4765-45f8-8e51-6aeee0a46ea9)
+
 ## From the author
 I hope that the application will contribute to scientific development in the field of hydrology and climatology.
 
