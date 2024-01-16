@@ -3,7 +3,7 @@ The goal of the Application is to automatize downloading of in-situ meteorologic
 
 The application base on Climate R package of [Bartosz Czernecki](https://github.com/bczernecki) 
 
-All you need is to just run the app. 
+All you need is to simply launch the application. 
 
 ## From the author
 I hope that the application will contribute to scientific development in the field of hydrology and climatology.
