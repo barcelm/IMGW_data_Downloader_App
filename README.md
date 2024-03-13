@@ -15,7 +15,7 @@ All you need is to simply launch the application.
 ## From the author
 I hope that the application will contribute to scientific development in the field of hydrology and climatology.
 
-Over time, I will develop this application to increase its potential.
+Over time I will develop this application to increase its potential.
 
 ## Contribution
 Any comments, suggestions and contributions regarding the operation of the application are welcome at bartlomiej.sobczyk135@gmail.com
