@@ -60,10 +60,10 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                     #data----
                     renderText("Data range"),
                     column(fluidRow(selectInput('dateRange1',
-                                                'From:', choices = c(1962:year(Sys.Date())-2))),width = 6),
+                                                'From:', choices = c(1951:year(Sys.Date())))),width = 6),
                     
                     column(fluidRow(selectInput('dateRange2',
-                                                'To:', choices = c((year(Sys.Date())-2):1960))),width = 6),
+                                                'To:', choices = c((year(Sys.Date())):1951))),width = 6),
                     
                     #Stations----
                     textInput("Stacje", "Station name (if empty download all):", "", placeholder = "e.g.:POZNAŃ-MOST ROCHA "),
